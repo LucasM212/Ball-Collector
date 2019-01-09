@@ -1,3 +1,4 @@
+import random
 x1=100
 x2=100
 y1=430
@@ -21,9 +22,10 @@ def draw():
     ellipse(x, y, 25, 25) 
     if y >= 640:
         y = 0
-    y += 1 
+    y += 4 
     if (x >= x1 and x <= x + 100) and (y >= y1 and y <= y1 + 50):
         y = 0
+        x = random.randint(0, 480)
         score += 10
     
     
