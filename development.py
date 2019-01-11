@@ -23,7 +23,7 @@ def draw():
     if y >= 640:
         y = 0
     y += 4 
-    if (x >= x1 and x <= x + 100) and (y >= y1 and y <= y1 + 50):
+    if (x >= x1 and x <= x1 + 100) and (y >= y1 and y <= y1 + 50):
         y = 0
         x = random.randint(0, 480)
         score += 10
