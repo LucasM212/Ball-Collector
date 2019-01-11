@@ -27,7 +27,8 @@ def draw():
         y = 0
         x = random.randint(0, 480)
         score += 10
-    
+    if y >= 480:
+        sys.exit()
     
     
         
