@@ -1,3 +1,4 @@
+import time
 import random
 x1=100
 x2=100
@@ -28,8 +29,14 @@ def draw():
         x = random.randint(0, 480)
         score += 10
     if y >= 480:
-        sys.exit()
-    
+        fill(250,250)
+        rect(20,160,600,120)
+        textSize(100)
+        fill(34,34,255)
+        text("GAME OVER!",20, 255)
+        textSize(20)
+        fill(255)
+        time.sleep(2)
     
         
  
