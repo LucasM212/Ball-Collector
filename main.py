@@ -10,7 +10,7 @@ score = 0
 
 def setup():
     size(640, 480)
-
+    
 def draw():
     global score
     background(0)
@@ -28,6 +28,19 @@ def draw():
         y = 0
         x = random.randint(0, 480)
         score += 10
+    if score == 100:
+        fill(34,34,255)
+        text("SICKO MODE!",20, 255)
+        y += 7
+    if score == 200:
+        fill(34,34,255)
+        text("SICKO MODE!",20, 255)
+        y += 10
+    if score == 300:
+        fill(34,34,255)
+        text("SICKO MODE!",20, 255)
+        y += 13
+    
     if y >= 480:
         fill(250,250)
         rect(20,160,600,120)
@@ -36,14 +49,14 @@ def draw():
         text("GAME OVER!",20, 255)
         textSize(20)
         fill(255)
-        time.sleep(2)
-    
+        time.sleep(2)    
         
  
 def keyReleased():
     global x1, y1, x2, y2
     if (key==CODED):
         if (keyCode == LEFT):
-            x1=x1-20
+            x1=x1-28
         elif (keyCode == RIGHT):
-            x1=x1+20
+            x1=x1+28
+        
