@@ -28,19 +28,7 @@ def draw():
         y = 0
         x = random.randint(0, 480)
         score += 10
-    if score == 100:
-        fill(34,34,255)
-        text("SICKO MODE!",20, 255)
-        y += 7
-    if score == 200:
-        fill(34,34,255)
-        text("SICKO MODE!",20, 255)
-        y += 10
-    if score == 300:
-        fill(34,34,255)
-        text("SICKO MODE!",20, 255)
-        y += 13
-    
+        
     if y >= 480:
         fill(250,250)
         rect(20,160,600,120)
